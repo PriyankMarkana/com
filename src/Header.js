@@ -19,7 +19,7 @@ function Header() {
             <div style={{ backgroundColor: "black", color: "white" }}>
                 <div className='data-container'>
                     <nav className='py-2 pb-lg-2 pb-4'>
-                        <Row className='align-items-center justify-content-sm-between p-0'>
+                        <Row className='align-items-center justify-content-between p-0'>
                             <Col className='p-0' xs={6} md={3} lg={2}>
                                 <div className="d-flex py-3">
                                     <div style={{ width: "120px", height: "36px" }}>
@@ -30,8 +30,16 @@ function Header() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col className='d-lg-none text-end p-0'>
-                                <i style={{ fontSize: "23px" }}> <IoIosSearch /></i>
+                            <Col className='d-lg-none  pb-3 pb-sm-0 justify-items-end'>
+                            <div className="d-flex align-items-center search p-2" style={{ backgroundColor: "rgb(26, 26, 30)", fontSize: "10px" }}>
+                                    <i className='px-1'>
+                                        <IoIosSearch style={{ backgroundColor: "rgb(26, 26, 30)", fontSize: "18px" }} />
+                                    </i>
+                                    <form onSubmit={(e) => { handleSubmit(e) }} method='post'>
+                                        <input type='text' value={input} onChange={(e) => { setInput(e.target.value) }} placeholder="Search apps, games and more" size={29} className='ps-1 text-white border-0' width='100px' style={{ backgroundColor: "rgb(26, 26, 30)", fontSize: "13px" }} ></input>
+                                        <input type="submit" hidden />
+                                    </form>
+                                </div>
                             </Col>
                             <Col className='d-flex justify-content-center p-0' xs={12} lg>
                                 <ul className="d-flex m-0 p-0 lists">
