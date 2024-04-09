@@ -16,7 +16,7 @@ function Header() {
     }
     return (
         <div>
-            <div style={{ backgroundColor: "black", color: "white" }}>
+            {/* <div style={{ backgroundColor: "black", color: "white" }}>
                 <div className='data-container'>
                     <nav className='py-2 pb-lg-2 pb-4'>
                         <Row className='align-items-center justify-content-sm-between p-0'>
@@ -62,7 +62,7 @@ function Header() {
                         </Row>
                     </nav>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
