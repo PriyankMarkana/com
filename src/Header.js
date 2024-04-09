@@ -9,11 +9,11 @@ function Header() {
     let navigate = useNavigate();
     let dispatch = useDispatch();
     let [input, setInput] = useState('');
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        dispatch(searchData(input));
-        navigate('/search');
-    }
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     dispatch(searchData(input));
+    //     navigate('/search');
+    // }
     return (
         <div>
             {/* <div style={{ backgroundColor: "black", color: "white" }}>
