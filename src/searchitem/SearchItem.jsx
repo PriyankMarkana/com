@@ -1,4 +1,4 @@
-ximport React from 'react'
+import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import { FaStar } from "react-icons/fa";
