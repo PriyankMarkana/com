@@ -93,12 +93,9 @@ function Games() {
               0: {
                 items: 1
               },
-              300: {
-                items: 1,
-              },
-              800: {
+              768: {
                 items: 3,
-              },  
+              },
               1000:{
                 items:4,
               },

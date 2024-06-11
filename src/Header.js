@@ -31,12 +31,12 @@ function Header() {
                                 </div>
                             </Col>
                             <Col className='d-lg-none  pb-3 pb-sm-0 justify-items-end'>
-                            <div className="d-flex align-items-center search p-2" style={{ backgroundColor: "rgb(26, 26, 30)", fontSize: "10px" }}>
-                                    <i className='px-1'>
+                            <div className="d-flex align-items-center search " style={{ backgroundColor: "rgb(26, 26, 30)", fontSize: "10px" }}>
+                                    <i className='px-2 py-2'>
                                         <IoIosSearch style={{ backgroundColor: "rgb(26, 26, 30)", fontSize: "18px" }} />
                                     </i>
                                     <form onSubmit={(e) => { handleSubmit(e) }} method='post'>
-                                        <input type='text' value={input} onChange={(e) => { setInput(e.target.value) }} placeholder="Search apps, games and more" size={29} className='ps-1 text-white border-0' width='100px' style={{ backgroundColor: "rgb(26, 26, 30)", fontSize: "13px" }} ></input>
+                                        <input type='text' value={input} onChange={(e) => { setInput(e.target.value) }} placeholder="Search apps, games and more"  className='ps-1 text-white border-0'  style={{ backgroundColor: "rgb(26, 26, 30)", fontSize: "11px" }} ></input>
                                         <input type="submit" hidden />
                                     </form>
                                 </div>
